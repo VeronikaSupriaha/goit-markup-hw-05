@@ -453,5 +453,113 @@
   </div>
    </div>
 </footer>
+<div class="backdrop is-open">
+  <div class="modal">
+    <button class="modal-close-btn">
+      <svg class="modal-close-icon" width="8px" height="8px" aria-label="close modal icon">
+        <use href="./images/icons.svg#icon-modal-close">
+        </use>
+      </svg>
+    </button>
+    <p class="order-form-description">Leave your contacts and we will call you back</p>
+    <form class="order-form">
+      <div class="order-form-field-wrapper">
+        <label class="order-form-label" for="user-name">Name</label>
+         <div class="order-form-input-wrapper">
+          <input 
+          class="order-form-input" 
+          type="text" 
+          id="user-name" 
+          name="user-name" 
+          pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+          required 
+          />
+          <svg 
+          class="order-form-icon"
+          width="12"
+          height="12"
+          aria-label="user name icon"
+          >
+            <use href="./images/icons.svg#icon-user-name"></use>
+          </svg>
+         </div>         
+      </div>
+      <div class="order-form-field-wrapper">
+        <label class="order-form-label" for="user-tel">Phone</label>
+        <div class="order-form-input-wrapper">
+        <input 
+          class="order-form-input" 
+          type="tel"
+          id="user-tel"
+          name="user-tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          required/>
+          <svg
+          class="order-form-icon"
+          width="13"
+          height="13"
+          aria-label="user phone icon">
+            <use href="./images/icons.svg#icon-user-tel"></use>
+          </svg>
+      </div>
+      </div>
+      <div class="order-form-field-wrapper">
+        <label class="order-form-label" for="user-email">Email</label>
+        <div class="order-form-input-wrapper">
+          <input 
+          class="order-form-input" 
+          type="email"
+          id="user-email"
+          name="user-email"
+          required>
+          <svg
+          class="order-form-icon"
+          width="15"
+          height="12"
+          aria-label="user's email icon">
+            <use href="./images/icons.svg#icon-user-email"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="order-form-field-wrapper">
+        <label class="order-form-label" for="user-comment">Comment</label>
+          <textarea 
+          class="order-form-comment" 
+          name="user-comment" 
+          id="user-comment" 
+          placeholder="Text input" 
+          required>
+              </textarea>
+      </div>
+      <div class="order-checkbox-wrapper">
+        <input 
+        class="order-checkbox visually-hidden"
+        type="checkbox"
+        id="user-privacy-policy"
+        name="user-privacy-policy"
+        value="true"
+        required>
+        <label 
+        class="order-checkbox-label"
+        for="user-privacy-policy">
+        <span class="order-form-own-checkbox">
+          <svg 
+          class="order-form-own-checkbox-icon"
+          width="16"
+          height="16"
+          aria-label="checkmark-icon">
+            <use href="./images/icons.svg#icon-checkbox"></use>
+          </svg>
+        </span>
+      I accept the terms and conditions of the <a class="checkbox-link" href="">Privacy Policy</a>
+    </label>
+      </div>
+    <button class="order-form-btn" type="submit">
+      Send
+    </button>
+    </form>
+  </div>
+
+</div>
 </body>
 </html>
